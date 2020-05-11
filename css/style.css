@@ -1,0 +1,40 @@
+body {
+  background: #8BC34A;
+}
+
+.text {
+  top: 50%;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-family: 'Oswald', sans-serif;
+  line-height: 60px;
+}
+.text span {
+  color: #fff;
+  font-size: 70px;
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 5px;
+  -webkit-transition: 2s;
+  transition: 2s;
+  text-shadow: 0px 0px 0px #558B2F;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  cursor: default;
+}
+.text span:hover {
+  text-shadow: -8px 8px 0px #558B2F;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  top: -8px;
+  left: 8px;
+}
+.text span.space {
+  width: 20px;
+  height: 100%;
+}
