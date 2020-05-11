@@ -1,24 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html >
 <head>
   <meta charset="UTF-8">
-  <title>Levitation text</title>
+  <title>Text Scramble Effect</title>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Oswald'>
-
-      <link rel="stylesheet" href="css/style.css">
-
   
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+html,
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #212121;
+  height: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  color: #fafafa;
+}
+.dud {
+  color: #757575;
+}
+
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
 </head>
 
 <body>
-  <!-- You can write hire ehat you want -->
-<div class="text">Hover me</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-
-    <script  src="js/index.js"></script>
+  <div class="container">
+  <div class="text"></div>
+</div>
+  
+    <script src="js/index.js"></script>
 
 </body>
 </html>
